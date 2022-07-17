@@ -1,0 +1,13 @@
+root = true
+
+[*]
+end_of_line = lf
+insert_final_nexline = true
+
+[*.{html,xml}]
+indent_style = space
+indent_size = 2
+
+[*.{css,json}]
+indent_style = tab
+indent_size = 2

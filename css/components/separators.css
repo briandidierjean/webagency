@@ -1,0 +1,17 @@
+.separator__line {
+	background: var(--color-secondary);
+	height: 1px;
+	margin: auto;
+	width: 30%;
+}
+
+.separator__circle {
+	background: var(--color-primary);
+	border: 5px var(--color-background-primary) solid;
+	border-radius: 50%;
+	bottom: 13px;
+	height: 26px;
+	margin: auto;
+	position: relative;
+	width: 26px;
+}

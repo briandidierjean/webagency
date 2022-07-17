@@ -1,0 +1,27 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	margin: 10px 0;
+}
+
+.form__field {
+	border: 1px var(--color-secondary) solid;
+	border-radius: 4px;
+	margin: 8px 0;
+	padding: 8px 12px;
+}
+
+.form__field--textarea {
+	resize: vertical;
+}
+
+.form__submit-btn {
+	align-self: center;
+	margin: 10px 0;
+}
+
+@media screen and (min-width: 1200px) {
+	.form__submit-btn {
+		align-self: flex-start;
+	}
+}

@@ -1,0 +1,14 @@
+.section-header {
+	text-align: center;
+}
+
+.section-header__description {
+	margin: 2px 0 16px 0;
+}
+
+@media screen and (min-width: 1200px) {
+	.section-header__description {
+		margin: 2px auto 16px;
+		max-width: 60%;
+	}
+}

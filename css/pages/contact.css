@@ -1,0 +1,96 @@
+.contact {
+	padding: 80px 0 0;
+}
+
+@media screen and (min-width: 768px) {
+	.contact {
+		padding: 100px 0 0;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.contact {
+		padding: 0;
+		position: relative;
+	}
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+	.contact-info {
+		width: 40%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.contact-info {
+		background: rgba(255, 255, 255, 0.8);
+		padding: 0 20px;
+		position: absolute;
+		right: 10%;
+		top: 40px;
+		width: 380px;
+		z-index: 1;
+	}
+}
+
+.contact-info__title {
+	align-self: center;
+}
+
+@media screen and (min-width: 1200px) {
+	.contact-info__title {
+		align-self: flex-start;
+		font-size: 1.8rem;
+		margin: 20px 0 7px;
+		text-transform: none;
+	}
+}
+
+.contact-info address {
+	margin: 20px 0;
+}
+
+@media screen and (min-width: 1200px) {
+	.contact-info address {
+		margin: 7px 0;
+	}
+}
+
+.contact-info abbr {
+	border-bottom: 1px var(--color-text) dotted;
+}
+
+.contact-map {
+	height: 500px;
+	position: relative;
+	width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+	.contact-map {
+		height: 685px;
+	}
+}
+
+.contact-map > iframe {
+	border: none;
+	height: inherit;
+	margin: 0 0 -5px;
+	width: inherit;
+}
+
+.contact-map__overlay {
+	background: rgba(19, 105, 140, 0.3);
+	height: inherit;
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	width: inherit;
+}

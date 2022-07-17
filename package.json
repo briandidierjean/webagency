@@ -1,0 +1,17 @@
+{
+	"name": "webagency",
+	"version": "1.0.0",
+	"description": "WebAgency's website.",
+	"author": "Brian Didierjean <hello@briandidierjean.dev>",
+	"scripts": {
+		"postcss": "postcss ./css/main.css --use postcss-import autoprefixer postcss-csso --output ./css/dist/styles.min.css --watch"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.7",
+		"postcss": "^8.4.14",
+		"postcss-cli": "^9.1.0",
+		"postcss-csso": "^6.0.0",
+		"postcss-import": "^14.1.0"
+	},
+	"browserslist": "last 4 versions"
+}

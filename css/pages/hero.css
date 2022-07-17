@@ -1,0 +1,154 @@
+.hero {
+	height: 100vh;
+	margin: 0 auto;
+	padding: 132px 12px 0;
+	width: 70%;
+}
+
+@media screen and (min-width: 768px) {
+	.hero {
+		padding: 112px 100px 0;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.hero {
+		height: auto;
+		margin: 0;
+		padding: 100px 0 0;
+		width: auto;
+	}
+
+	.hero-slider {
+		overflow: hidden;
+		position: relative;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.hero-slider__content {
+		display: flex;
+		width: 200%;
+	}
+}
+
+.hero-slider__content > img {
+	display: none;
+}
+
+@media screen and (min-width: 1200px) {
+	.hero-slider__content > img {
+		display: revert;
+		height: auto;
+		width: 100vw;
+	}
+}
+
+.hero-heading {
+	color: var(--color-heading);
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+	.hero-heading {
+		color: var(--color-background-primary);
+		left: 14%;
+		position: absolute;
+		top: 45%;
+		transform: translateY(-50%);
+		width: 38%;
+	}
+}
+
+.hero-heading__title {
+	margin: 6px 0;
+}
+
+@media screen and (min-width: 1200px) {
+	.hero-heading__title {
+		color: var(--color-background-primary);
+	}
+}
+
+.hero-heading__title > span {
+	color: var(--color-primary);
+}
+
+.hero-heading__description {
+	font-weight: bold;
+	margin: 6px 0;
+}
+
+.hero-heading__description * {
+	font-weight: bold;
+}
+
+.hero-heading > .btn {
+	align-self: center;
+	margin: 18px 0;
+}
+
+@media screen and (min-width: 768px) {
+	.hero-heading > .btn {
+		align-self: flex-start;
+	}
+}
+
+.hero-slider__btn {
+	display: none;
+}
+
+@media screen and (min-width: 1200px) {
+	.hero-slider__btn {
+		background: rgba(0, 0, 0, 0.2);
+		border: none;
+		color: var(--color-background-primary);
+		cursor: pointer;
+		display: block;
+		position: absolute;
+		top: 48%;
+		transform: translateY(-50%);
+	}
+
+	.hero-slider__btn:active {
+		background: rgba(0, 0, 0, 0.5);
+	}
+
+	.hero-slider__btn--left {
+		border-bottom-right-radius: 50px;
+		border-top-right-radius: 50px;
+		padding: 24px 12px 24px 10px;
+	}
+
+	.hero-slider__btn--right {
+		border-bottom-left-radius: 50px;
+		border-top-left-radius: 50px;
+		padding: 24px 10px 24px 12px;
+		right: 0;
+	}
+
+	.hero-slider__btn > span {
+		font-size: 22px;
+	}
+}
+
+.hero-slider__indicator {
+	display: none;
+}
+
+@media screen and (min-width: 1200px) {
+	.hero-slider__indicator {
+		background: rgba(0, 0, 0, 0.1);
+		bottom: 0;
+		display: block;
+		height: 4px;
+		position: absolute;
+		width: 100%;
+	}
+
+	.hero-slider__indicator--current {
+		background: var(--color-primary);
+		width: 14%;
+	}
+}
